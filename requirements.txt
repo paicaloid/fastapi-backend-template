@@ -1,0 +1,15 @@
+# pip install -r requirements.txt
+
+bcrypt
+configparser
+fastapi
+passlib
+pillow
+psycopg2
+pydantic
+python-dotenv
+python-jose
+python-multipart
+sqlalchemy
+uvicorn
+
