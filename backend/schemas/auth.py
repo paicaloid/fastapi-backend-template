@@ -2,6 +2,15 @@ from datetime import datetime
 from pydantic import BaseModel
 from typing import Optional
 
+class AuthJWTSettings(BaseModel):
+    authjwt_secret_key: str
+    authjwt_token_location: set = {"cookies"}
+    authjwt_cookie_secure: bool
+    authjwt_cookie_csrf_protect: bool
+
+class UserLogin(BaseModel):
+    username: str
+    password: str
 
 class UserBase(BaseModel):
     username : str
@@ -16,6 +25,7 @@ class UserUpdate(BaseModel):
     
 class User(UserBase):
     id : int
+    mlflow_exp_id: int
     class Config:
         orm_mode = True
 
