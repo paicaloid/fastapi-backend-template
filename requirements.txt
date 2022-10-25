@@ -1,11 +1,15 @@
 # pip install -r requirements.txt
-
+aiofiles
 bcrypt
+boto3
 configparser
 fastapi
+fastapi-jwt-auth
+minio
+mlflow
 passlib
 pillow
-psycopg2
+psycopg2-binary
 pydantic
 python-dotenv
 python-jose
